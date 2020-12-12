@@ -1,0 +1,44 @@
+.Main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px 7px;
+    background-color: #f9f7d9;
+    border: 2px solid #fce2ce padding: 15px;
+}
+
+.grid-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-gap: 15px 7px;
+    background-color: #f9f7d9;
+    border: 2px solid #fce2ce;
+    border-radius: 18px;
+    padding: 15px;
+    margin: 5px 0;
+    box-shadow: 5px 5px 5px #fce2ce;
+}
+
+.p-type {
+    color: #086972;
+    font-size: 25px;
+}
+
+.p-title {
+    color: #01a9b4;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.p-date {
+    color: #797a7e;
+    font-size: 15px;
+}
+
+.p-desc {
+    color: #00bcd4;
+    font-size: 20px;
+    font-style: italic;
+    font-family: serif;
+}

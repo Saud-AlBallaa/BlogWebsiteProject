@@ -1,0 +1,56 @@
+@import "./Post-Main.css";
+@import "./Post-side.css";
+@import url("./Header.css");
+@import url("./Footer.css");
+body{
+  background-color: #cffffe
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "hd hd hd hd hd hd"
+  "main main main main main sd"
+  "ft ft ft ft ft ft";
+  margin: 15px;
+  grid-gap:15px 15px;
+}
+.blog-button {
+   margin: 3px;
+   font-size: 20px;
+   box-shadow: 5px 5px 5px #fce2ce;
+
+}
+
+.blog-img {
+    width: 50%;
+    height: 50%;
+    box-shadow: 5px 5px 5px #fce2ce;
+    margin: 3px;
+}
+/* For tablet users */
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+    .main {
+        grid-template-columns: 300px;
+    }
+
+    .header {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+}
+/* For mobile users */
+@media screen and (max-width: 700px) {
+    .main {
+        grid-template-columns: 300px;
+    }
+
+    .header {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+}
